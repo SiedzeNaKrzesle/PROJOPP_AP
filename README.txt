@@ -1,4 +1,14 @@
+Jaki jest cel?
 
 
-dasdasdasda
+
+
+Jak działa?
+
+
+
+Na czym polega interakcja z użytkownikiem?
+
+
+
 
