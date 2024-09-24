@@ -7,7 +7,7 @@ Użytkownik wpisuje działanie a kalkulator je rozwiązuje.
 
 
 Na czym polega interakcja z użytkownikiem?
-Inteakcja polega na tym że użytkownik wpisuje działanie a program je rozwiązuje.
+Interakcja polega na tym że użytkownik wpisuje działanie a program je rozwiązuje.
 
 
 
