@@ -113,18 +113,6 @@ namespace PROJOP_AP
                         break;
 
                     case ":":
-                    
-                        if (secondNum != 0)
-                        {
-                            result /= secondNum;
-                        }
-                        else
-                        {
-                            ekran.Text = "B³¹d";
-                            return;
-                        }
-                        break;
-
                     case "/":
                         if (secondNum != 0)
                         {
@@ -132,7 +120,7 @@ namespace PROJOP_AP
                         }
                         else
                         {
-                            ekran.Text = "B³¹d";
+                            ekran.Text = "BÂ³Â¹d";
                             return;
                         }
                         break;
@@ -159,7 +147,7 @@ namespace PROJOP_AP
             ekran.Text = currentInput;
         }
             
-        private void sigma_razy_Click(object sender, EventArgs e) //metoda od mno¿enia
+        private void sigma_razy_Click(object sender, EventArgs e) //metoda od mnoÂ¿enia
         {
             Button button = (Button)sender;
             currentInput += button.Text;
