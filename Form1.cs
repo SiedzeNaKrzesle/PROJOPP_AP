@@ -3,7 +3,7 @@ namespace PROJOP_AP
     public partial class Form1 : Form
     {
         string currentInput = "";
-        double result = 0;
+
         string operation = "";
         bool operationPending = false;
         public Form1()
@@ -24,6 +24,7 @@ namespace PROJOP_AP
 
         private void guzik1_Click(object sender, EventArgs e)
         {
+           
             Button button = (Button)sender;
             currentInput += button.Text;
             ekran.Text = currentInput;
@@ -92,6 +93,7 @@ namespace PROJOP_AP
             ekran.Text = currentInput;
         }
 
+        double result = 0;
         private void Evaluate()
         {
             if (operationPending)
