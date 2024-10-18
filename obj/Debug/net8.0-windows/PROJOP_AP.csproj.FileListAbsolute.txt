@@ -1,0 +1,16 @@
+C:\Users\walde\source\repos\PROJOP_AP\bin\Debug\net8.0-windows\PROJOP_AP.exe
+C:\Users\walde\source\repos\PROJOP_AP\bin\Debug\net8.0-windows\PROJOP_AP.deps.json
+C:\Users\walde\source\repos\PROJOP_AP\bin\Debug\net8.0-windows\PROJOP_AP.runtimeconfig.json
+C:\Users\walde\source\repos\PROJOP_AP\bin\Debug\net8.0-windows\PROJOP_AP.dll
+C:\Users\walde\source\repos\PROJOP_AP\bin\Debug\net8.0-windows\PROJOP_AP.pdb
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.Form1.resources
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.csproj.GenerateResource.cache
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.AssemblyInfoInputs.cache
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.AssemblyInfo.cs
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.csproj.CoreCompileInputs.cache
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.dll
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\refint\PROJOP_AP.dll
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.pdb
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\PROJOP_AP.genruntimeconfig.cache
+C:\Users\walde\source\repos\PROJOP_AP\obj\Debug\net8.0-windows\ref\PROJOP_AP.dll
