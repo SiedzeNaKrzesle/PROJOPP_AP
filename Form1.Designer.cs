@@ -3,12 +3,15 @@ namespace PROJOP_AP
 {
     partial class Form1
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.TextBox ekran;
-        private System.Windows.Forms.TableLayoutPanel panel;
-        private System.Windows.Forms.Button[] cyfry = new System.Windows.Forms.Button[10];
-        private System.Windows.Forms.Button plus, minus, razy, dziel, rowna, clear;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -18,93 +21,73 @@ namespace PROJOP_AP
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            this.ekran = new System.Windows.Forms.TextBox();
-            this.panel = new System.Windows.Forms.TableLayoutPanel();
-
-            this.plus = new System.Windows.Forms.Button();
-            this.minus = new System.Windows.Forms.Button();
-            this.razy = new System.Windows.Forms.Button();
-            this.dziel = new System.Windows.Forms.Button();
-            this.rowna = new System.Windows.Forms.Button();
-            this.clear = new System.Windows.Forms.Button();
-
-            // Form
-            this.SuspendLayout();
-            this.ClientSize = new System.Drawing.Size(400, 600);
-            this.Name = "Form1";
-            this.Text = "Kalkulator";
-            this.Load += new System.EventHandler(this.Form1_Load);
-
+            ekran = new TextBox();
+            panel = new TableLayoutPanel();
+            SuspendLayout();
+            // 
             // ekran
-            this.ekran.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ekran.Font = new System.Drawing.Font("Consolas", 28F);
-            this.ekran.ReadOnly = true;
-            this.ekran.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ekran.Height = 80;
-            this.Controls.Add(this.ekran);
-
+            // 
+            ekran.Dock = DockStyle.Top;
+            ekran.Font = new Font("Consolas", 28F);
+            ekran.Location = new Point(0, 0);
+            ekran.Margin = new Padding(3, 4, 3, 4);
+            ekran.Name = "ekran";
+            ekran.ReadOnly = true;
+            ekran.Size = new Size(400, 62);
+            ekran.TabIndex = 0;
+            ekran.TextAlign = HorizontalAlignment.Right;
+            // 
             // panel
-            this.panel.ColumnCount = 4;
-            this.panel.RowCount = 5;
-            this.panel.Dock = System.Windows.Forms.DockStyle.None;
-            this.panel.Location = new System.Drawing.Point(10, 100); // przesunięcie w dół
-            this.panel.Size = new System.Drawing.Size(380, 480);
-            this.panel.Padding = new Padding(10);
-            this.panel.Margin = new Padding(10);
-            for (int i = 0; i < 4; i++)
-                this.panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            for (int i = 0; i < 5; i++)
-                this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.Controls.Add(this.panel);
-
-            // cyfry 1-9
-            int num = 1;
-            for (int row = 2; row >= 0; row--)
-            {
-                for (int col = 0; col < 3; col++)
-                {
-                    cyfry[num] = new System.Windows.Forms.Button();
-                    cyfry[num].Text = num.ToString();
-                    cyfry[num].Dock = DockStyle.Fill;
-                    cyfry[num].Click += new System.EventHandler(this.Cyfra_Click);
-                    this.panel.Controls.Add(cyfry[num], col, row);
-                    num++;
-                }
-            }
-
-
-            cyfry[0] = new System.Windows.Forms.Button();
-            cyfry[0].Text = "0";
-            cyfry[0].Dock = DockStyle.Fill;
-            cyfry[0].Click += new System.EventHandler(this.Cyfra_Click);
-            this.panel.Controls.Add(cyfry[0], 1, 3);
-
-
-            plus.Text = "+";
-            minus.Text = "-";
-            razy.Text = "*";
-            dziel.Text = "/";
-            rowna.Text = "=";
-            clear.Text = "C";
-
-            Button[] operatory = { plus, minus, razy, dziel, rowna, clear };
-            foreach (Button op in operatory)
-            {
-                op.Dock = DockStyle.Fill;
-                op.Click += new System.EventHandler(this.Operator_Click);
-            }
-
-            this.panel.Controls.Add(plus, 3, 0);
-            this.panel.Controls.Add(minus, 3, 1);
-            this.panel.Controls.Add(razy, 3, 2);
-            this.panel.Controls.Add(dziel, 3, 3);
-            this.panel.Controls.Add(rowna, 2, 3);
-            this.panel.Controls.Add(clear, 0, 3);
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            panel.Anchor = AnchorStyles.None;
+            panel.ColumnCount = 4;
+            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            panel.Location = new Point(10, 65);
+            panel.Margin = new Padding(10, 12, 10, 12);
+            panel.Name = "panel";
+            panel.Padding = new Padding(10, 12, 10, 12);
+            panel.RowCount = 5;
+            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            panel.Size = new Size(380, 494);
+            panel.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(400, 559);
+            Controls.Add(ekran);
+            Controls.Add(panel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            Name = "Form1";
+            Text = "Kalkulator";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox ekran;
+        private System.Windows.Forms.TableLayoutPanel panel;
     }
 }
+
+// Note: All dynamic button creation and configuration should be done in Form1.cs (outside InitializeComponent).
