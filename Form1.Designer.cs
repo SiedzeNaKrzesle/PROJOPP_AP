@@ -1,93 +1,82 @@
-﻿// Form1.Designer.cs
-namespace PROJOP_AP
+﻿namespace PROJOP_AP
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.TextBox ekran;
+        private System.Windows.Forms.TableLayoutPanel panel;
+        private System.Windows.Forms.ListBox historia;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            ekran = new TextBox();
-            panel = new TableLayoutPanel();
-            SuspendLayout();
+            this.ekran = new System.Windows.Forms.TextBox();
+            this.panel = new System.Windows.Forms.TableLayoutPanel();
+            this.historia = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
             // 
             // ekran
             // 
-            ekran.Dock = DockStyle.Top;
-            ekran.Font = new Font("Consolas", 28F);
-            ekran.Location = new Point(0, 0);
-            ekran.Margin = new Padding(3, 4, 3, 4);
-            ekran.Name = "ekran";
-            ekran.ReadOnly = true;
-            ekran.Size = new Size(400, 62);
-            ekran.TabIndex = 0;
-            ekran.TextAlign = HorizontalAlignment.Right;
+            this.ekran.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ekran.Font = new System.Drawing.Font("Consolas", 28F);
+            this.ekran.Location = new System.Drawing.Point(0, 0);
+            this.ekran.Name = "ekran";
+            this.ekran.ReadOnly = true;
+            this.ekran.Size = new System.Drawing.Size(700, 62);
+            this.ekran.TabIndex = 0;
+            this.ekran.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel
             // 
-            panel.Anchor = AnchorStyles.None;
-            panel.ColumnCount = 4;
-            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            panel.Location = new Point(10, 65);
-            panel.Margin = new Padding(10, 12, 10, 12);
-            panel.Name = "panel";
-            panel.Padding = new Padding(10, 12, 10, 12);
-            panel.RowCount = 5;
-            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            panel.Size = new Size(380, 494);
-            panel.TabIndex = 1;
+            this.panel.ColumnCount = 4;
+            this.panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel.Location = new System.Drawing.Point(10, 65);
+            this.panel.Name = "panel";
+            this.panel.RowCount = 6;
+            this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66F));
+            this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66F));
+            this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66F));
+            this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66F));
+            this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66F));
+            this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66F));
+            this.panel.Size = new System.Drawing.Size(380, 540);
+            this.panel.TabIndex = 1;
+            // 
+            // historia
+            // 
+            this.historia.FormattingEnabled = true;
+            this.historia.ItemHeight = 28;
+            this.historia.Location = new System.Drawing.Point(410, 65);
+            this.historia.Name = "historia";
+            this.historia.Size = new System.Drawing.Size(270, 540);
+            this.historia.TabIndex = 2;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(400, 559);
-            Controls.Add(ekran);
-            Controls.Add(panel);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 4, 3, 4);
-            MaximizeBox = false;
-            Name = "Form1";
-            Text = "Kalkulator";
-            Load += Form1_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.ClientSize = new System.Drawing.Size(700, 620);
+            this.Controls.Add(this.historia);
+            this.Controls.Add(this.panel);
+            this.Controls.Add(this.ekran);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.Text = "Kalkulator";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox ekran;
-        private System.Windows.Forms.TableLayoutPanel panel;
     }
 }
-
-// Note: All dynamic button creation and configuration should be done in Form1.cs (outside InitializeComponent).
